@@ -1,11 +1,5 @@
-function App() {
-  return (
-    <>
-      <div className='flex items-center'>
-        <p>Teste</p>
-      </div>
-    </>
-  );
-}
+import { Header } from './components/Header';
 
-export default App;
+export function App() {
+  return <Header />;
+}
