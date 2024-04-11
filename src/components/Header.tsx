@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { IoMenu } from 'react-icons/io5';
+import { ButtonForm } from './ui/Button';
 
 export function Header() {
   const [openLeftMenu, setOpenLeftMenu] = useState<boolean>(false);
@@ -11,10 +12,10 @@ export function Header() {
 
   return (
     <div className='flex h-fit justify-center items-center '>
-      <div className='flex justify-between w-11/12 items-center'>
-        <button onClick={toggleLeftMenu}>
+      <div className='flex justify-between items-center'>
+        <ButtonForm onClick={toggleLeftMenu}>
           <IoMenu className='size-12' />
-        </button>
+        </ButtonForm>
         <h1 className='text-4xl text-center py-5 font-semibold'>
           Backoffice Example
         </h1>
