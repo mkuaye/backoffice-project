@@ -11,16 +11,15 @@ export function Header() {
   };
 
   return (
-    <div className='flex h-fit justify-center items-center '>
-      <div className='flex justify-between items-center'>
-        <ButtonForm onClick={toggleLeftMenu}>
-          <IoMenu className='size-12' />
-        </ButtonForm>
-        <h1 className='text-4xl text-center py-5 font-semibold'>
-          Backoffice Example
-        </h1>
-        <div />
-      </div>
+    <div className='flex w-full justify-between'>
+      <ButtonForm onClick={toggleLeftMenu}>
+        <IoMenu className='size-12' />
+      </ButtonForm>
+
+      <h1 className='text-4xl text-center py-5 font-semibold'>
+        Backoffice Example
+      </h1>
+      <div />
     </div>
   );
 }
